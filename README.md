@@ -85,22 +85,12 @@ search_all_teams.php?l={league} → équipes d’une league
 Aucune API key requise pour ces endpoints.
 
 
-Ajoute facilement vos captures d’écran dans ce dossier :
-Assets/Screenshots
+Captures d’écran dans ce dossier :
+Ressources/Screenshots
 
-Exemple (mockups générés) :
-
-Recherche de leagues    Équipes d'une league
-
-    
-
-(Je peux te fournir des captures plus réalistes si tu veux.)
 
 Installation
-git clone https://github.com/ton-repo/paris-sportifs-ios.git
-cd paris-sportifs-ios
-open ParisSportifs.xcodeproj
-
+git clone https://github.com/MansMal/FDJ
 
 Lancer ensuite le projet dans Xcode (iOS 15+ requis).
 
@@ -110,17 +100,17 @@ Aucune configuration nécessaire.
 L’API fonctionne sans clé pour les endpoints requis.
 
 Structure:
-├── Models
-│   ├── League.swift
-│   └── Team.swift
+├── League
+│   ├── League+ContentView.swift
+│   └── League+ViewModel.swift
+│   └── League+Model.swift
+├── Team
+│   ├── TeamList+View.swift
+│   └── Team+Model.swift
+│   └── Team+ViewModel.swift
 ├── Networking
-│   └── SportsAPIClient.swift
-├── ViewModels
-│   ├── LeagueSearchViewModel.swift
-│   └── TeamsViewModel.swift
-└── Views
-    ├── LeagueSearchView.swift
-    └── TeamsListView.swift
+   └── APIClientService.swift
+
 
 
 
